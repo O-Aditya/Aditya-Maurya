@@ -1,0 +1,25 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20251031185033
+Username: DESKOFSKYCRAWLE\Dell
+RunAs User: DESKOFSKYCRAWLE\Dell
+Configuration Name: 
+Machine: DESKOFSKYCRAWLE (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell.exe -NoProfile -ExecutionPolicy Bypass -File E:\VOLDEBUG_SOC_Auditor_Tool.ps1 -Auditor Meet -TargetUser Bharat (MIS) -OutputPath E:\VOLDEBUG_Audits -Days 30 -CollectRiskSignals -CollectBrowserArtifacts
+Process ID: 12228
+PSVersion: 5.1.26100.7019
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7019
+BuildVersion: 10.0.26100.7019
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is E:\VOLDEBUG_Audits\VOLDEBUG_DESKOFSKYCRAWLE_20251031_185032\transcript.txt
+PS>TerminatingError(Where-Object): "The property 'DisplayName' cannot be found on this object. Verify that the property exists."
+PS>TerminatingError(Where-Object): "The property 'DisplayName' cannot be found on this object. Verify that the property exists."
+**********************
+Windows PowerShell transcript end
+End time: 20251031185158
+**********************

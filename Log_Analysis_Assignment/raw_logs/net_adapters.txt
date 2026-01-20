@@ -1,0 +1,7 @@
+﻿
+Name     InterfaceDescription                      Status       MacAddress        LinkSpeed
+----     --------------------                      ------       ----------        ---------
+Ethernet Intel(R) Ethernet Connection (17) I219-LM Disconnected D0-46-0C-89-CE-7F 0 bps    
+Wi-Fi    TP-Link Wireless USB Adapter              Up           5C-62-8B-9F-44-3A 400 Mbps 
+
+

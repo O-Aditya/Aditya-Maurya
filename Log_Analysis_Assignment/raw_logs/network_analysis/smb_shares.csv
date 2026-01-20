@@ -1,0 +1,7 @@
+﻿"Name","Path","Description","CurrentUsers","EncryptData","FolderEnumerationMode"
+"ADMIN$","C:\WINDOWS","Remote Admin","0","False","Unrestricted"
+"C$","C:\","Default share","0","False","Unrestricted"
+"D$","D:\","Default share","0","False","Unrestricted"
+"IPC$","","Remote IPC","0","False","Unrestricted"
+"MIS printer","HP LaserJet Tank 1020,LocalsplOnly","HP LaserJet Tank 1020","0","False","Unrestricted"
+"print$","C:\WINDOWS\system32\spool\drivers","Printer Drivers","0","False","Unrestricted"

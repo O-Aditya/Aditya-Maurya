@@ -1,0 +1,138 @@
+﻿"ProfileName","Details"
+"KANAN WIFi","
+Profile KANAN WIFi on interface Wi-Fi: 
+======================================================================= 
+
+Applied: All User Profile    
+
+Profile information 
+------------------- 
+    Version                : 1
+    Type                   : Wireless LAN
+    Name                   : KANAN WIFi
+    Control options        : 
+        Connection mode    : Connect automatically
+        Network broadcast  : Connect only if this network is broadcasting
+        AutoSwitch         : Do not switch to other networks
+        MAC Randomization  : Disabled
+
+Connectivity settings 
+--------------------- 
+    Number of SSIDs        : 1
+    SSID name              : ""KANAN WIFi""
+    Network type           : Infrastructure
+    Radio type             : [ Any Radio Type ]
+    Vendor extension          : Not present
+
+Security settings 
+----------------- 
+    Authentication         : WPA2-Personal
+    Cipher                 : GCMP
+    Authentication         : WPA2-Personal
+    Cipher                 : CCMP
+    Security key           : Present
+    Key Content            : Kipl@1996
+
+Cost settings 
+------------- 
+    Cost                   : Unrestricted
+    Congested              : No
+    Approaching Data Limit : No
+    Over Data Limit        : No
+    Roaming                : No
+    Cost Source            : Default
+"
+"AndroidAP_5013","
+Profile AndroidAP_5013 on interface Wi-Fi: 
+======================================================================= 
+
+Applied: All User Profile    
+
+Profile information 
+------------------- 
+    Version                : 1
+    Type                   : Wireless LAN
+    Name                   : AndroidAP_5013
+    Control options        : 
+        Connection mode    : Connect automatically
+        Network broadcast  : Connect only if this network is broadcasting
+        AutoSwitch         : Do not switch to other networks
+        MAC Randomization  : Disabled
+
+Connectivity settings 
+--------------------- 
+    Number of SSIDs        : 1
+    SSID name              : ""AndroidAP_5013""
+    Network type           : Infrastructure
+    Radio type             : [ Any Radio Type ]
+    Vendor extension          : Not present
+
+Security settings 
+----------------- 
+    Authentication         : WPA3-Personal
+    Cipher                 : GCMP-256
+    Authentication         : WPA3-Personal
+    Cipher                 : GCMP
+    Authentication         : WPA3-Personal
+    Cipher                 : CCMP
+    Security key           : Present
+    Key Content            : 12346789
+
+Cost settings 
+------------- 
+    Cost                   : Unrestricted
+    Congested              : No
+    Approaching Data Limit : No
+    Over Data Limit        : No
+    Roaming                : No
+    Cost Source            : Default
+"
+"Galaxy A23 CDAC","
+Profile Galaxy A23 CDAC on interface Wi-Fi: 
+======================================================================= 
+
+Applied: All User Profile    
+
+Profile information 
+------------------- 
+    Version                : 1
+    Type                   : Wireless LAN
+    Name                   : Galaxy A23 CDAC
+    Control options        : 
+        Connection mode    : Connect automatically
+        Network broadcast  : Connect only if this network is broadcasting
+        AutoSwitch         : Do not switch to other networks
+        MAC Randomization  : Disabled
+
+Connectivity settings 
+--------------------- 
+    Number of SSIDs        : 1
+    SSID name              : ""Galaxy A23 CDAC""
+    Network type           : Infrastructure
+    Radio type             : [ Any Radio Type ]
+    Vendor extension          : Not present
+
+Security settings 
+----------------- 
+    Authentication         : WPA3-Personal
+    Cipher                 : GCMP-256
+    Authentication         : WPA3-Personal
+    Cipher                 : GCMP
+    Authentication         : WPA3-Personal
+    Cipher                 : CCMP
+    Authentication         : WPA2-Personal
+    Cipher                 : GCMP
+    Authentication         : WPA2-Personal
+    Cipher                 : CCMP
+    Security key           : Present
+    Key Content            : Kanan2025
+
+Cost settings 
+------------- 
+    Cost                   : Unrestricted
+    Congested              : No
+    Approaching Data Limit : No
+    Over Data Limit        : No
+    Roaming                : No
+    Cost Source            : Default
+"

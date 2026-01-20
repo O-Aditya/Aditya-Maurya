@@ -1,0 +1,11 @@
+﻿
+
+AMServiceEnabled          : True
+AntispywareEnabled        : True
+AntivirusEnabled          : True
+RealTimeProtectionEnabled : True
+QuickScanTime             : 
+FullScanAge               : 4294967295
+
+
+

@@ -1,0 +1,10 @@
+﻿
+IPAddress      InterfaceAlias              PrefixLength AddressState
+---------      --------------              ------------ ------------
+169.254.19.6   Local Area Connection* 10             16    Tentative
+169.254.8.232  Local Area Connection* 9              16    Tentative
+169.254.93.174 Ethernet                              16    Tentative
+192.168.68.106 Wi-Fi                                 22    Preferred
+127.0.0.1      Loopback Pseudo-Interface 1            8    Preferred
+
+

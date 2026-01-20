@@ -1,0 +1,1 @@
+﻿Full EVTX export skipped by user choice.

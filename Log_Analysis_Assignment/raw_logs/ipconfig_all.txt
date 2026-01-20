@@ -1,0 +1,56 @@
+﻿
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : DESKOFSKYCRAWLER
+   Primary Dns Suffix  . . . . . . . : 
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Intel(R) Ethernet Connection (17) I219-LM
+   Physical Address. . . . . . . . . : D0-46-0C-89-CE-7F
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Local Area Connection* 9:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter
+   Physical Address. . . . . . . . . : 5E-62-8B-9F-44-3A
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Local Area Connection* 10:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #2
+   Physical Address. . . . . . . . . : 5C-62-8B-9F-44-3A
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : TP-Link Wireless USB Adapter
+   Physical Address. . . . . . . . . : 5C-62-8B-9F-44-3A
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::8eb:378b:3429:e54b%6(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.68.106(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.252.0
+   Lease Obtained. . . . . . . . . . : 31 October 2025 11:34:41 AM
+   Lease Expires . . . . . . . . . . : 31 October 2025 08:35:31 PM
+   Default Gateway . . . . . . . . . : fe80::5ee9:31ff:fe5c:d54c%6
+                                       192.168.68.1
+   DHCP Server . . . . . . . . . . . : 192.168.68.1
+   DHCPv6 IAID . . . . . . . . . . . : 89940619
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2E-99-F7-77-D0-46-0C-89-CE-7F
+   DNS Servers . . . . . . . . . . . : 192.168.29.1
+                                       192.168.68.1
+   NetBIOS over Tcpip. . . . . . . . : Enabled

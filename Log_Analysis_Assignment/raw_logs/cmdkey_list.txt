@@ -1,0 +1,28 @@
+﻿
+Currently stored credentials:
+
+    Target: MicrosoftAccount:target=SSO_POP_Device
+    Type: Generic 
+    User: 02njbdqyatmqxuik
+    Saved for this logon only
+    
+    Target: LegacyGeneric:target=Olk/PushNotificationsBackupKey
+    Type: Generic 
+    User: Olk/PushNotificationsBackupKey
+    Local machine persistence
+    
+    Target: LegacyGeneric:target=MicrosoftAccount:user=bharatk.kanan@gmail.com
+    Type: Generic 
+    User: bharatk.kanan@gmail.com
+    Local machine persistence
+    
+    Target: WindowsLive:target=virtualapp/didlogical
+    Type: Generic 
+    User: 02njbdqyatmqxuik
+    Local machine persistence
+    
+    Target: LegacyGeneric:target=Olk/PushNotificationsKey
+    Type: Generic 
+    User: Olk/PushNotificationsKey
+    Local machine persistence
+    

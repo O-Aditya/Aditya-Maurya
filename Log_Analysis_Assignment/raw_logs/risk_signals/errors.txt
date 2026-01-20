@@ -1,0 +1,2 @@
+﻿Remote access tools detection failed: The property 'DisplayName' cannot be found on this object. Verify that the property exists.
+Cloud clients detection failed: The property 'DisplayName' cannot be found on this object. Verify that the property exists.

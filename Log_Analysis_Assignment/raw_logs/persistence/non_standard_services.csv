@@ -1,0 +1,4 @@
+﻿"Name","DisplayName","PathName","StartMode","State","StartName"
+"MDCoreSvc","Microsoft Defender Core Service","""C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.25090.3009-0\MpDefenderCoreService.exe""","Auto","Running","LocalSystem"
+"WdNisSvc","Microsoft Defender Antivirus Network Inspection Service","""C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.25090.3009-0\NisSrv.exe""","Manual","Running","NT AUTHORITY\LocalService"
+"WinDefend","Microsoft Defender Antivirus Service","""C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.25090.3009-0\MsMpEng.exe""","Auto","Running","LocalSystem"

@@ -1,0 +1,6 @@
+﻿
+SerialNumber Manufacturer SMBIOSBIOSVersion
+------------ ------------ -----------------
+78WNM24      Dell Inc.    1.15.0           
+
+

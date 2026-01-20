@@ -1,0 +1,2 @@
+﻿"Name","Query","EventNamespace"
+"SCM Event Log Filter","select * from MSFT_SCMEventLogEvent","root\cimv2"

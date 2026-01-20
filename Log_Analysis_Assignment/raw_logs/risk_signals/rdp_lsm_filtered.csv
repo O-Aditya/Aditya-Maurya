@@ -1,0 +1,607 @@
+﻿"TimeCreated","Id","LevelDisplayName","Message"
+"31-10-2025 11:35:16 AM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"31-10-2025 11:35:16 AM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"31-10-2025 11:35:16 AM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"31-10-2025 11:35:16 AM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"31-10-2025 11:34:32 AM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"30-10-2025 07:18:18 PM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"30-10-2025 07:17:58 PM","40","Information","Session 1 has been disconnected, reason code 26"
+"30-10-2025 07:17:58 PM","54","Information","Local multi-user session manager received system shutdown message"
+"30-10-2025 07:17:24 PM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"30-10-2025 07:16:00 PM","54","Information","Local multi-user session manager received system shutdown message"
+"30-10-2025 07:16:00 PM","23","Information","Remote Desktop Services: Session logoff succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"30-10-2025 07:15:47 PM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 2"
+"30-10-2025 07:15:47 PM","25","Information","Remote Desktop Services: Session reconnection succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"30-10-2025 07:15:47 PM","40","Information","Session 1 has been disconnected, reason code 5"
+"30-10-2025 07:15:47 PM","40","Information","Session 2 has been disconnected, reason code 0"
+"30-10-2025 07:15:47 PM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 2"
+"30-10-2025 07:15:45 PM","24","Information","Remote Desktop Services: Session has been disconnected:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"30-10-2025 07:15:45 PM","40","Information","Session 1 has been disconnected, reason code 11"
+"30-10-2025 07:15:45 PM","39","Information","Session 1 has been disconnected by session 1"
+"30-10-2025 12:28:48 PM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"30-10-2025 12:28:48 PM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"30-10-2025 12:28:48 PM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"30-10-2025 12:28:48 PM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"30-10-2025 12:28:42 PM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"29-10-2025 08:08:15 PM","54","Information","Local multi-user session manager received system shutdown message"
+"29-10-2025 08:08:15 PM","23","Information","Remote Desktop Services: Session logoff succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"29-10-2025 01:42:44 PM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"29-10-2025 01:42:44 PM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"29-10-2025 01:42:44 PM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"29-10-2025 01:42:44 PM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"29-10-2025 01:42:20 PM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"29-10-2025 11:53:39 AM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"29-10-2025 11:53:39 AM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"29-10-2025 11:53:39 AM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"29-10-2025 11:53:39 AM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"29-10-2025 11:53:33 AM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"28-10-2025 08:13:18 PM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"28-10-2025 08:13:18 PM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"28-10-2025 08:13:18 PM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"28-10-2025 08:13:18 PM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"28-10-2025 08:13:10 PM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"28-10-2025 02:57:00 PM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"28-10-2025 02:57:00 PM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"28-10-2025 02:56:59 PM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"28-10-2025 02:56:59 PM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"28-10-2025 02:56:43 PM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"28-10-2025 01:54:56 PM","36","Error","An error occurred when transitioning from DesktopLocked in response to EvDesktopLocked. (ErrorCode 0x8007139F)"
+"28-10-2025 01:54:56 PM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"28-10-2025 01:54:56 PM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"28-10-2025 01:54:55 PM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"28-10-2025 01:54:55 PM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"28-10-2025 01:54:54 PM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"28-10-2025 01:54:28 PM","54","Information","Local multi-user session manager received system shutdown message"
+"28-10-2025 01:54:28 PM","23","Information","Remote Desktop Services: Session logoff succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"28-10-2025 01:46:37 PM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"28-10-2025 01:46:37 PM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"28-10-2025 01:46:37 PM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"28-10-2025 01:46:37 PM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"28-10-2025 01:44:16 PM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"28-10-2025 11:41:48 AM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"28-10-2025 11:41:48 AM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"28-10-2025 11:41:48 AM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"28-10-2025 11:41:48 AM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"28-10-2025 11:35:17 AM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"28-10-2025 11:34:56 AM","54","Information","Local multi-user session manager received system shutdown message"
+"28-10-2025 11:34:45 AM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"27-10-2025 11:14:53 AM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"27-10-2025 11:14:53 AM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"27-10-2025 11:14:53 AM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"27-10-2025 11:14:53 AM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"27-10-2025 11:14:19 AM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"25-10-2025 10:30:50 AM","36","Error","An error occurred when transitioning from DesktopLocked in response to EvDesktopLocked. (ErrorCode 0x8007139F)"
+"25-10-2025 10:30:49 AM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"25-10-2025 10:30:49 AM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"25-10-2025 10:30:49 AM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"25-10-2025 10:30:49 AM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"25-10-2025 10:30:49 AM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"24-10-2025 07:51:07 PM","54","Information","Local multi-user session manager received system shutdown message"
+"24-10-2025 07:51:07 PM","23","Information","Remote Desktop Services: Session logoff succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"24-10-2025 06:47:20 PM","36","Error","An error occurred when transitioning from DesktopLocked in response to EvDesktopLocked. (ErrorCode 0x8007139F)"
+"24-10-2025 06:47:20 PM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"24-10-2025 06:47:20 PM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"24-10-2025 06:47:20 PM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"24-10-2025 06:47:20 PM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"24-10-2025 06:47:16 PM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"24-10-2025 06:46:40 PM","54","Information","Local multi-user session manager received system shutdown message"
+"24-10-2025 06:46:40 PM","23","Information","Remote Desktop Services: Session logoff succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"24-10-2025 11:09:13 AM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"24-10-2025 11:09:12 AM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"24-10-2025 11:09:12 AM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"24-10-2025 11:09:12 AM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"24-10-2025 11:08:20 AM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"18-10-2025 10:49:30 AM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"18-10-2025 10:49:30 AM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"18-10-2025 10:49:30 AM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"18-10-2025 10:49:30 AM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"18-10-2025 10:44:17 AM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"18-10-2025 10:43:55 AM","54","Information","Local multi-user session manager received system shutdown message"
+"18-10-2025 10:43:44 AM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"17-10-2025 10:42:31 AM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"17-10-2025 10:42:31 AM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"17-10-2025 10:42:31 AM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"17-10-2025 10:42:31 AM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"17-10-2025 10:41:10 AM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"16-10-2025 02:52:19 PM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"16-10-2025 02:52:19 PM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"16-10-2025 02:52:19 PM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"16-10-2025 02:52:19 PM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"16-10-2025 02:52:15 PM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"15-10-2025 02:47:55 PM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"15-10-2025 02:47:55 PM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"15-10-2025 02:47:55 PM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"15-10-2025 02:47:55 PM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"15-10-2025 02:47:44 PM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"14-10-2025 07:59:40 PM","54","Information","Local multi-user session manager received system shutdown message"
+"14-10-2025 07:59:40 PM","23","Information","Remote Desktop Services: Session logoff succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"14-10-2025 11:16:44 AM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"14-10-2025 11:16:44 AM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"14-10-2025 11:16:43 AM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"14-10-2025 11:16:43 AM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"14-10-2025 11:16:04 AM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"13-10-2025 11:28:21 AM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"13-10-2025 11:28:21 AM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"13-10-2025 11:28:21 AM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"13-10-2025 11:28:21 AM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"13-10-2025 11:27:57 AM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"11-10-2025 11:17:10 AM","36","Error","An error occurred when transitioning from DesktopLocked in response to EvDesktopLocked. (ErrorCode 0x8007139F)"
+"11-10-2025 11:17:09 AM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"11-10-2025 11:17:09 AM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"11-10-2025 11:17:09 AM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"11-10-2025 11:17:09 AM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"11-10-2025 11:17:08 AM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"10-10-2025 07:38:39 PM","54","Information","Local multi-user session manager received system shutdown message"
+"10-10-2025 07:38:39 PM","23","Information","Remote Desktop Services: Session logoff succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"10-10-2025 11:05:50 AM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"10-10-2025 11:05:50 AM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"10-10-2025 11:05:50 AM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"10-10-2025 11:05:50 AM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"10-10-2025 11:05:41 AM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"09-10-2025 11:07:27 AM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"09-10-2025 11:07:27 AM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"09-10-2025 11:07:27 AM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"09-10-2025 11:07:27 AM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"09-10-2025 11:05:48 AM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"08-10-2025 11:11:09 AM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"08-10-2025 11:11:09 AM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"08-10-2025 11:11:09 AM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"08-10-2025 11:11:09 AM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"08-10-2025 11:11:03 AM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"07-10-2025 01:40:57 PM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"07-10-2025 01:40:57 PM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"07-10-2025 01:40:57 PM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"07-10-2025 01:40:57 PM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"07-10-2025 01:40:51 PM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"07-10-2025 01:40:24 PM","54","Information","Local multi-user session manager received system shutdown message"
+"07-10-2025 01:40:24 PM","23","Information","Remote Desktop Services: Session logoff succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"07-10-2025 11:20:06 AM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"07-10-2025 11:20:06 AM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"07-10-2025 11:20:06 AM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"07-10-2025 11:20:06 AM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"07-10-2025 11:19:58 AM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"06-10-2025 11:26:45 AM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"06-10-2025 11:26:45 AM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"06-10-2025 11:26:44 AM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"06-10-2025 11:26:44 AM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"06-10-2025 11:26:40 AM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"04-10-2025 10:46:12 AM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"04-10-2025 10:46:12 AM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"04-10-2025 10:46:12 AM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"04-10-2025 10:46:12 AM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"04-10-2025 10:45:49 AM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
+"03-10-2025 10:56:44 AM","22","Information","Remote Desktop Services: Shell start notification received:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"03-10-2025 10:56:44 AM","21","Information","Remote Desktop Services: Session logon succeeded:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1
+Source Network Address: LOCAL"
+"03-10-2025 10:56:44 AM","42","Information","End session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"03-10-2025 10:56:44 AM","41","Information","Begin session arbitration:
+
+User: DESKOFSKYCRAWLE\Dell
+Session ID: 1"
+"03-10-2025 10:56:40 AM","32","Information","Plugin RDSAppXPlugin has been successfully initialized"
