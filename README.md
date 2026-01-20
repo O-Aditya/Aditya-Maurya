@@ -10,7 +10,7 @@ This repository is organized by individual assignments. Each folder contains the
 
 | Assignment | Description | Status |
 | :--- | :--- | :--- |
-| [**Log_Analysis_Assignment**](./Log_Analysis_Assignment) | Analysis of system and network logs to identify patterns and insights. | ✅ Completed |
+| [**Log_Analysis_Assignment**](./Log_Analysis_Assignment) | Analysis of system and network logs to identify patterns and insights. | ⏳ Pending |
 | *Upcoming...* | *Pending assignment...* | ⏳ Pending |
 
 ## 🛠️ Tech Stack
