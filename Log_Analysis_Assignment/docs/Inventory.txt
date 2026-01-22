@@ -1,0 +1,97 @@
+## Log File Inventory
+**Generated:** 01/22/2026 22:54:24
+
+| File Name | Size |
+| :--- | :--- |
+| browsers | 1 |
+| network_analysis | 1 |
+| persistence | 1 |
+| risk_signals | 1 |
+| security_audit | 1 |
+| arp_a.txt | 2412 |
+| bios.txt | 144 |
+| bitlocker_status.txt | 1495 |
+| cmdkey_list.txt | 802 |
+| collector_runlog.txt | 5724 |
+| collector_script.ps1 | 559 |
+| defender_preferences.txt | 8347 |
+| defender_status.txt | 219 |
+| edr_candidates_present.txt | 10 |
+| events_filtered_Application.csv | 224018 |
+| events_filtered_Microsoft-Windows-WindowsUpdateClient_Operational.csv | 8065 |
+| events_filtered_Security.csv | 1436860 |
+| events_filtered_System.csv | 144316 |
+| evtx_export_skipped.txt | 45 |
+| firewall_profiles.txt | 399 |
+| firewall_rules.csv | 86136 |
+| gpresult.html | 159984 |
+| installed_hotfixes.txt | 697 |
+| installed_software.csv | 7773 |
+| ipconfig_all.txt | 2465 |
+| local_admins.csv | 96 |
+| local_users_passwordinfo.csv | 252 |
+| net_adapters.txt | 381 |
+| net_ip_addresses.txt | 499 |
+| netstat_ano.txt | 9282 |
+| os_summary.txt | 175 |
+| powershell_history.txt | 697 |
+| route_print.txt | 2244 |
+| run_metadata.json | 225 |
+| scheduled_tasks_verbose.txt | 568533 |
+| services_running.csv | 17947 |
+| systeminfo.txt | 3200 |
+| transcript.txt | 1254 |
+| volumes.txt | 806 |
+| Chrome | 1 |
+| Edge | 1 |
+| Default | 1 |
+| Profile 12 | 1 |
+| Profile 13 | 1 |
+| Profile 14 | 1 |
+| Profile 16 | 1 |
+| Profile 17 | 1 |
+| Profile 6 | 1 |
+| Profile 8 | 1 |
+| extensions.csv | 221 |
+| History_copy.db | 28147712 |
+| extensions.csv | 492 |
+| History_copy.db | 5013504 |
+| extensions.csv | 410 |
+| History_copy.db | 2162688 |
+| extensions.csv | 697 |
+| History_copy.db | 11927552 |
+| extensions.csv | 410 |
+| History_copy.db | 3047424 |
+| extensions.csv | 411 |
+| History_copy.db | 180224 |
+| extensions.csv | 312 |
+| History_copy.db | 1736704 |
+| extensions.csv | 572 |
+| History_copy.db | 18120704 |
+| Default | 1 |
+| extensions.csv | 421 |
+| History_copy.db | 6291456 |
+| active_connections.csv | 3347 |
+| dns_cache.csv | 2755 |
+| errors.txt | 126 |
+| hosts_file.txt | 824 |
+| smb_shares.csv | 505 |
+| wifi_profiles.csv | 4390 |
+| non_microsoft_scheduled_tasks.csv | 945 |
+| non_standard_services.csv | 620 |
+| registry_run_keys.csv | 2212 |
+| startup_folder_files.csv | 248 |
+| wmi_event_consumers.csv | 73 |
+| wmi_event_filters.csv | 111 |
+| wmi_filter_bindings.csv | 129 |
+| errors.txt | 259 |
+| failed_logins.csv | 116 |
+| powershell_operational_filtered.csv | 4863748 |
+| prefetch_listing.csv | 30193 |
+| print_jobs.csv | 5997 |
+| rdp_lsm_filtered.csv | 23952 |
+| recent_documents.csv | 80322 |
+| startup_commands.csv | 2604 |
+| successful_logins_interactive.csv | 1305 |
+| usb_disks.csv | 195 |
+| process_creation_audit.csv | 1838 |
