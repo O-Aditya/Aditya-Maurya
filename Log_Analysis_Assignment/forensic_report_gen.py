@@ -1,195 +1,201 @@
 import os
-import re
+import requests
+import json
 import datetime
+import sys
+import time
 
 # --- CONFIGURATION ---
-BASE_DIR = "." 
-OUTPUT_DIR = os.path.join(BASE_DIR, "Final_Forensic_Reports")
+BASE_DIR = "."
+OUTPUT_DIR = os.path.join(BASE_DIR, "Final_Audit_Reports")
 AUTHOR = "Aditya Maurya"
+
+# Connection Settings
+OLLAMA_URL = "http://127.0.0.1:11434/api/generate"
+MODEL_NAME = "mistral:latest" 
 
 # Auto-detect log directory
 LOG_DIR = None
 for root, dirs, files in os.walk(BASE_DIR):
-    if "raw_logs" in dirs:
-        LOG_DIR = os.path.join(root, "raw_logs")
-        break
-    if "raw_file" in dirs:
-        LOG_DIR = os.path.join(root, "raw_file")
-        break
-
-if not LOG_DIR:
-    LOG_DIR = BASE_DIR # Fallback
+    if "raw_logs" in dirs: LOG_DIR = os.path.join(root, "raw_logs"); break
+    if "raw_file" in dirs: LOG_DIR = os.path.join(root, "raw_file"); break
+if not LOG_DIR: LOG_DIR = BASE_DIR
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# --- 🧠 EXPANDED KNOWLEDGE BASE (30+ Artifacts) ---
-# Maps specific keywords in filenames to Forensic Definitions
-ARTIFACT_KB = {
-    # --- SYSTEM INFORMATION ---
-    "bios": {"cat": "System Info", "title": "BIOS & Firmware Configuration", "risk": "Outdated firmware can harbor vulnerabilities."},
-    "systeminfo": {"cat": "System Info", "title": "System Information Summary", "risk": "Reveals OS version and patch level gaps."},
-    "os_summary": {"cat": "System Info", "title": "OS Summary", "risk": "OS version details for vulnerability mapping."},
-    "hotfixes": {"cat": "Patch Management", "title": "Installed Hotfixes", "risk": "Missing critical security patches."},
-    "volumes": {"cat": "Disk Forensics", "title": "Disk Volumes & Storage", "risk": "Hidden partitions may store stolen data."},
-    "bitlocker": {"cat": "Disk Encryption", "title": "BitLocker Status", "risk": "Unencrypted drives allow physical data theft."},
-    "transcript": {"cat": "Forensic Metadata", "title": "Collection Transcript", "risk": "Audit trail of the collection process."},
-    
-    # --- NETWORK FORENSICS ---
-    "ipconfig": {"cat": "Network Config", "title": "IP Configuration", "risk": "Rogue DNS or unusual subnets."},
-    "netstat": {"cat": "Network Telemetry", "title": "Netstat Connections", "risk": "Active C2 connections or listening backdoors."},
-    "active_connections": {"cat": "Network Telemetry", "title": "Active Network Connections", "risk": "Unauthorized remote access tools (AnyDesk/TeamViewer)."},
-    "dns_cache": {"cat": "Network Forensics", "title": "DNS Cache Analysis", "risk": "Evidence of visiting phishing or C2 domains."},
-    "arp": {"cat": "Network Forensics", "title": "ARP Cache", "risk": "Static entries may indicate ARP poisoning."},
-    "route": {"cat": "Network Forensics", "title": "Routing Table", "risk": "Malicious route redirection."},
-    "hosts": {"cat": "Network Forensics", "title": "Hosts File Analysis", "risk": "Redirection of legitimate sites to malicious IPs."},
-    "smb_shares": {"cat": "Network Shares", "title": "SMB Shares", "risk": "Open shares allow lateral movement."},
-    "wifi": {"cat": "Wireless Forensics", "title": "Wi-Fi Profiles", "risk": "Connecting to rogue APs or leaking credentials."},
-    "firewall": {"cat": "Network Security", "title": "Firewall Configuration", "risk": "Disabled firewall or permissive rules."},
-    
-    # --- IDENTITY & ACCESS ---
-    "local_admins": {"cat": "Identity", "title": "Local Administrators", "risk": "Unauthorized users with full system control."},
-    "local_users": {"cat": "Identity", "title": "Local User Accounts", "risk": "Hidden or backdoor user accounts."},
-    "cmdkey": {"cat": "Credential Theft", "title": "Stored Credentials (CmdKey)", "risk": "Saved passwords accessible to attackers."},
-    "failed_logins": {"cat": "Auth Logs", "title": "Failed Login Attempts", "risk": "Brute force attack indicators."},
-    "successful_logins": {"cat": "Auth Logs", "title": "Successful Interactive Logins", "risk": "Unauthorized physical or RDP access."},
-    
-    # --- PERSISTENCE & EXECUTION ---
-    "scheduled_tasks": {"cat": "Persistence", "title": "Scheduled Tasks", "risk": "Malware persisting across reboots."},
-    "services": {"cat": "Persistence", "title": "System Services", "risk": "Backdoor services running as SYSTEM."},
-    "startup": {"cat": "Persistence", "title": "Startup Items", "risk": "Programs launching automatically at login."},
-    "registry_run": {"cat": "Persistence", "title": "Registry Run Keys", "risk": "Fileless persistence mechanisms."},
-    "wmi": {"cat": "Advanced Persistence", "title": "WMI Event Filters/Consumers", "risk": "Sophisticated fileless malware persistence."},
-    
-    # --- RISK SIGNALS & THREATS ---
-    "usb_disks": {"cat": "Device Forensics", "title": "USB Device History", "risk": "Data exfiltration via USB or malware entry."},
-    "rdp": {"cat": "Remote Access", "title": "RDP Connection Logs", "risk": "Lateral movement via Remote Desktop."},
-    "powershell": {"cat": "Script Forensics", "title": "PowerShell Activity", "risk": "Malicious scripts or 'Fileless' attacks."},
-    "prefetch": {"cat": "Execution Artifacts", "title": "Prefetch Listing", "risk": "Evidence of program execution history."},
-    "print_jobs": {"cat": "Data Loss", "title": "Print Job History", "risk": "Sensitive documents printed (Data Exfiltration)."},
-    "recent_documents": {"cat": "User Activity", "title": "Recent Documents", "risk": "Access to sensitive files."},
-    "process_creation": {"cat": "Process Forensics", "title": "Process Creation Audit", "risk": "Malware execution chains."},
-    
-    # --- BROWSER & SOFTWARE ---
-    "extensions": {"cat": "Browser Forensics", "title": "Browser Extensions", "risk": "Malicious extensions stealing data."},
-    "installed_software": {"cat": "Asset Mgmt", "title": "Installed Software", "risk": "Vulnerable or unauthorized software."},
-    "defender": {"cat": "Endpoint Security", "title": "Defender Status", "risk": "AV disabled or tampering detected."},
-    "edr": {"cat": "Endpoint Security", "title": "EDR Candidates", "risk": "Presence or absence of security sensors."},
-    "errors": {"cat": "System Health", "title": "Error Logs", "risk": "System instability caused by malware."}
-}
+# --- THE "AUDIT-GRADE" SYSTEM PROMPT ---
+# This prompt forces the AI to mimic the structure of 'Cmdkey List Analysis Report.docx'
+SYSTEM_PROMPT = f"""
+You are a Senior Security Analyst & Digital Forensics Report Author.
+Your task is to analyze a specific log artifact and write a formal, audit-grade report.
 
-# --- 🕵️ ANALYSIS ENGINE ---
+**STRICT OUTPUT FORMAT (PURE MARKDOWN):**
 
-def analyze_content(filepath, keyword):
-    """Scans for red flags based on file type."""
-    suspicious = []
+# [Artifact Name] Analysis Report
+**Folder Name:** [Folder Name]
+**File Types:** [Extension, e.g., CSV, TXT]
+**Collection Date:** {datetime.datetime.now().strftime('%Y-%m-%d')}
+**Report Generated:** {datetime.datetime.now().strftime('%Y-%m-%d')}
+
+## 1. File Overview and Meaning
+### 1.1 What Is the [Artifact Name]?
+(Explain technical definition of this artifact in Windows/Linux environments.)
+
+### 1.2 Purpose and Importance
+(Explain why this data exists and why it is critical for security.)
+* **Credential Discovery:** ...
+* **Forensic Analysis:** ...
+
+### 1.3 File Format and Structure
+(Describe how the file is structured.)
+
+## 2. Data Types and Structure
+### 2.1 Key Attributes or Fields
+(List common fields found in this type of artifact.)
+
+### 2.2 Field Descriptions
+| Field Name | Data Type | Description |
+| :--- | :--- | :--- |
+| [Field 1] | String/Int | [Description] |
+| [Field 2] | String/Int | [Description] |
+
+### 2.3 Sensitive or Security-Relevant Data Categories
+* **Credential Metadata:** ...
+* **Access Context:** ...
+
+## 3. Where This Data Is Used
+### 3.1 Security Operations Use Cases
+(Explain how SOC teams use this data for auditing and monitoring.)
+
+### 3.2 Incident Response and Threat Hunting
+(Explain how IR teams use this to find attackers.)
+
+### 3.3 Correlation With Other Artifacts
+(List 2-3 other logs that correlate with this one, e.g., Event Logs, Firewall.)
+
+## 4. Data Protection and Security Precautions
+### 4.1 Why This Data Is Sensitive
+(Explain risks if this data is leaked.)
+
+### 4.2 Storage, Access Control, and Handling
+* **Encryption:** ...
+* **Access Control:** ...
+
+### 4.3 Retention and Disposal Considerations
+(Standard retention advice.)
+
+## 5. Sample Findings and Anomalies
+### 5.1 Normal or Expected Findings
+(Describe what "Good" looks like.)
+
+### 5.2 Suspicious or High-Risk Findings (ANALYSIS OF PROVIDED LOG)
+(Analyze the ACTUAL CONTENT provided below. Use a table for findings.)
+| Finding | Security Implication |
+| :--- | :--- |
+| [e.g., Cleartext Password] | [e.g., High-impact compromise] |
+| [e.g., AnyDesk Detected] | [e.g., Unauthorized Remote Access] |
+*(If clean, state: "No malicious indicators observed in this sample.")*
+
+## 6. Executive Summary
+(Write a professional summary of the analysis.)
+**Data Sensitivity Level:** [High/Medium/Low]
+**Protection Required:** [Encryption/Access Control]
+**Forensic Value:** [High/Medium/Low]
+
+---
+**Report prepared by {AUTHOR}**
+"""
+
+def query_ollama_audit(filename, foldername, content):
+    """Sends the log to Ollama with the Audit-Grade Prompt."""
     
+    # Safety Truncation (4000 chars to prevent crashes)
+    if len(content) > 4000:
+        content_snippet = content[:4000] + "\n[...Truncated for Stability...]"
+    else:
+        content_snippet = content
+
+    user_prompt = f"""
+    Please generate the forensic report for the following file.
+    
+    FILE METADATA:
+    - Filename: '{filename}'
+    - Folder: '{foldername}'
+    
+    LOG CONTENT TO ANALYZE (For Section 5.2):
+    {content_snippet}
+    """
+
+    payload = {
+        "model": MODEL_NAME,
+        "prompt": f"{SYSTEM_PROMPT}\n\n{user_prompt}",
+        "stream": False,
+        "options": {
+            "temperature": 0.2,  # Low temp for professional tone
+            "num_ctx": 4096,     # Sufficient context
+            "num_predict": 1024  # Allow long reports
+        }
+    }
+
     try:
-        with open(filepath, 'r', encoding='utf-8', errors='replace') as f:
-            content = f.read()
-            lower_content = content.lower()
-            
-            # Universal Checks
-            if "mimikatz" in lower_content: suspicious.append("Artifact 'Mimikatz' detected (Credential Dumping).")
-            if "psexec" in lower_content: suspicious.append("Artifact 'PsExec' detected (Lateral Movement).")
-            if "anydesk" in lower_content: suspicious.append("Remote Access Tool 'AnyDesk' detected.")
-            if "teamviewer" in lower_content: suspicious.append("Remote Access Tool 'TeamViewer' detected.")
-
-            # Specific Checks
-            if "wifi" in keyword and "password" in lower_content:
-                suspicious.append("Cleartext Wi-Fi password potentially visible.")
-            if "defender" in keyword and "false" in lower_content:
-                suspicious.append("Security protection appears DISABLED.")
-            if "bitlocker" in keyword and "off" in lower_content:
-                suspicious.append("Disk encryption is OFF.")
-            if "usb" in keyword and "sandisk" in lower_content:
-                suspicious.append("External USB storage activity detected.")
-            if "rdp" in keyword and len(content.splitlines()) > 5:
-                suspicious.append("High volume of RDP connections detected.")
-            if "failed" in keyword and len(content.splitlines()) > 10:
-                suspicious.append("High volume of failed login attempts (Brute Force Indicator).")
-
-    except:
-        pass # Skip binary read errors
+        session = requests.Session()
+        session.trust_env = False 
         
-    return suspicious
-
-# --- 📝 REPORT WRITER ---
-
-def generate_report(filename, filepath, keyword):
-    kb = ARTIFACT_KB[keyword]
-    suspicious = analyze_content(filepath, keyword)
-    
-    md = []
-    md.append(f"# {kb['title']}")
-    md.append(f"**Category:** {kb['cat']}")
-    md.append(f"**File Name:** `{filename}`")
-    md.append(f"**Date:** {datetime.datetime.now().strftime('%Y-%m-%d')}\n")
-
-    md.append("## 1. Artifact Overview")
-    md.append(f"**Purpose:** Analyzes {filename} to understand system state relating to {kb['cat']}.")
-    md.append(f"**Security Relevance:** {kb['risk']}")
-    
-    md.append("\n## 2. Findings & Analysis")
-    if suspicious:
-        md.append("| 🚨 Risk Level | Finding | Implication |")
-        md.append("| :--- | :--- | :--- |")
-        for s in suspicious:
-            md.append(f"| **HIGH** | {s} | Potential security breach or policy violation. |")
-    else:
-        md.append("✅ No high-risk anomalies detected in this specific artifact.")
-        md.append("\n_Note: Absence of evidence is not evidence of absence. Correlate with other logs._")
-
-    md.append("\n## 3. Recommendations")
-    if suspicious:
-        md.append("- **Investigate:** Validate the suspicious findings immediately.")
-        md.append("- **Contain:** If confirmed malicious, isolate the system.")
-    else:
-        md.append("- **Monitor:** Continue standard logging and monitoring.")
-        md.append("- **Retain:** Archive log for compliance.")
-
-    md.append("\n---\n")
-    md.append(f"Report prepared by {AUTHOR}")
-    
-    return "\n".join(md)
-
-# --- 🚀 MAIN EXECUTION ---
+        # 4 Minute timeout for detailed writing
+        response = session.post(OLLAMA_URL, json=payload, timeout=240)
+        
+        if response.status_code == 500:
+            return "❌ Error 500: Model overloaded."
+        elif response.status_code == 404:
+            return f"❌ Error 404: Model '{MODEL_NAME}' not found."
+            
+        response.raise_for_status()
+        return response.json()['response']
+        
+    except Exception as e:
+        return f"❌ Connection Error: {e}"
 
 def main():
-    print(f"🚀 Starting Deep Forensic Analysis in: {LOG_DIR}")
+    print(f"\n🚀 Starting AUDIT-GRADE Analysis with {MODEL_NAME}...")
+    
     count = 0
-
-    # Walk through ALL directories (including subfolders)
+    
     for root, dirs, files in os.walk(LOG_DIR):
         for file in files:
-            # Skip script and hidden files
-            if file.endswith(".py") or file.startswith("."): continue
+            if file.endswith(".py") or file.startswith(".") or "Report" in file: continue
             
-            fname_lower = file.lower()
-            matched_key = None
+            filepath = os.path.join(root, file)
+            folder_name = os.path.basename(root)
             
-            # Find matching definition in KB
-            for key in ARTIFACT_KB.keys():
-                if key in fname_lower:
-                    matched_key = key
-                    break
+            print(f"🧠 Generating Report for: {file}...", end=" ", flush=True)
             
-            if matched_key:
-                count += 1
-                # Calculate relative path for cleaner logging
-                rel_path = os.path.relpath(os.path.join(root, file), LOG_DIR)
-                print(f"   -> Analyzing: {rel_path}...")
+            try:
+                with open(filepath, 'r', encoding='utf-8', errors='replace') as f:
+                    content = f.read()
                 
-                report_content = generate_report(file, os.path.join(root, file), matched_key)
-                
-                # Save Report (sanitize filename)
-                safe_name = f"Report_{file.replace('.', '_')}.md"
-                with open(os.path.join(OUTPUT_DIR, safe_name), "w", encoding="utf-8") as f:
-                    f.write(report_content)
+                if not content.strip():
+                    print("Skipped (Empty).")
+                    continue
 
-    if count == 0:
-        print("❌ No recognizable log files found.")
-    else:
-        print(f"✅ Generated {count} Forensic Reports in '{OUTPUT_DIR}'")
+                ai_report = query_ollama_audit(file, folder_name, content)
+                
+                if "❌" in ai_report:
+                    print(f"\n   {ai_report}")
+                    time.sleep(2)
+                    continue
+
+                # Save
+                out_name = f"Audit_Report_{file.replace('.', '_')}.md"
+                with open(os.path.join(OUTPUT_DIR, out_name), "w", encoding="utf-8") as f:
+                    f.write(ai_report)
+                
+                print("✅ Done.")
+                count += 1
+                
+            except Exception as e:
+                print(f"Error: {e}")
+
+    print(f"\n🎉 Finished. {count} Audit-Grade reports saved in '{OUTPUT_DIR}'")
 
 if __name__ == "__main__":
     main()
