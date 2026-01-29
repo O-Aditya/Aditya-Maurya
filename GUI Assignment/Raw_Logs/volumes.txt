@@ -1,0 +1,39 @@
+﻿
+
+DriveLetter     : D
+FileSystemLabel : New Volume
+FileSystem      : NTFS
+HealthStatus    : Healthy
+SizeRemaining   : 623130087424
+Size            : 623251550208
+
+DriveLetter     : 
+FileSystemLabel : 
+FileSystem      : FAT32
+HealthStatus    : Warning
+SizeRemaining   : 65135616
+Size            : 100663296
+
+DriveLetter     : E
+FileSystemLabel : SOC_Auditor
+FileSystem      : NTFS
+HealthStatus    : Healthy
+SizeRemaining   : 61347586048
+Size            : 62897774592
+
+DriveLetter     : 
+FileSystemLabel : 
+FileSystem      : NTFS
+HealthStatus    : Healthy
+SizeRemaining   : 138842112
+Size            : 738193408
+
+DriveLetter     : C
+FileSystemLabel : 
+FileSystem      : NTFS
+HealthStatus    : Healthy
+SizeRemaining   : 264830869504
+Size            : 376089604096
+
+
+

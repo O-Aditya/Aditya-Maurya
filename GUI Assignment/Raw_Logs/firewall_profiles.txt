@@ -1,0 +1,8 @@
+﻿
+Name    Enabled DefaultInboundAction DefaultOutboundAction AllowInboundRules
+----    ------- -------------------- --------------------- -----------------
+Domain     True        NotConfigured         NotConfigured     NotConfigured
+Private    True        NotConfigured         NotConfigured     NotConfigured
+Public     True        NotConfigured         NotConfigured     NotConfigured
+
+
