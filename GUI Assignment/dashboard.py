@@ -2,6 +2,29 @@ import streamlit as st
 import requests
 import pandas as pd
 import altair as alt
+import subprocess
+import sys
+import time
+import requests
+
+# --- AUTO-START API SERVER (FOR STREAMLIT CLOUD) ---
+def start_api_server():
+    """Starts the FastAPI backend in a background process."""
+    # Check if API is already running
+    try:
+        requests.get("http://127.0.0.1:8000")
+        print("✅ API is already running.")
+    except requests.exceptions.ConnectionError:
+        print("🚀 Starting API Server...")
+        # Start server.py in the background
+        subprocess.Popen(
+            [sys.executable, "-m", "uvicorn", "server:app", "--host", "127.0.0.1", "--port", "8000"],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL
+        )
+        time.sleep(3)  # Wait for it to boot
+
+start_api_server()
 
 # --- CONFIGURATION ---
 API_URL = "http://127.0.0.1:8000"
