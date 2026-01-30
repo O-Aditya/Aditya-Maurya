@@ -10,12 +10,13 @@ This repository is organized by individual assignments. Each folder contains the
 
 | Assignment | Description | Status |
 | :--- | :--- | :--- |
-| [**Log_Analysis_Assignment**](./Log_Analysis_Assignment) | Analysis of system and network logs to identify patterns and insights. | ⏳ Pending |
-| *Upcoming...* | *Pending assignment...* | ⏳ Pending |
+| [**Log_Analysis_Assignment**](./Log_Analysis_Assignment) | Analysis of system and network logs to identify patterns, security risks, and operational insights. | ✅ Completed |
+| [**GUI Assignment**](./GUI%20Assignment) | A full-stack **Cybersecurity Forensic Dashboard** built with **FastAPI** (Backend) and **Streamlit** (Frontend) for automated report generation and threat visualization. | ✅ Completed |
 
 ## 🛠️ Tech Stack
-* **Languages:** Java, Python, JavaScript
-* **Focus:** Development, Problem Solving, System Analysis
+* **Languages:** Python, Java, JavaScript
+* **Frameworks & Libraries:** FastAPI, Streamlit, Pandas, Altair
+* **Focus:** Development, Problem Solving, System Analysis, Cybersecurity
 
 ---
 *Maintained by Aditya Maurya*
