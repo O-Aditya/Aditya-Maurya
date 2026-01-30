@@ -6,8 +6,9 @@ import subprocess
 import sys
 import time
 import requests
+import os  # <--- Add this import
 
-# --- AUTO-START API SERVER (FOR STREAMLIT CLOUD) ---
+# --- AUTO-START API SERVER (ROBUST VERSION) ---
 def start_api_server():
     """Starts the FastAPI backend in a background process."""
     # Check if API is already running
@@ -16,9 +17,14 @@ def start_api_server():
         print("✅ API is already running.")
     except requests.exceptions.ConnectionError:
         print("🚀 Starting API Server...")
-        # Start server.py in the background
+        
+        # Get the folder where this script (dashboard.py) is located
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+
+        # Start server.py in the background, specifically IN that folder
         subprocess.Popen(
             [sys.executable, "-m", "uvicorn", "server:app", "--host", "127.0.0.1", "--port", "8000"],
+            cwd=script_dir,  # <--- CRITICAL FIX: Run command inside the folder
             stdout=subprocess.DEVNULL,
             stderr=subprocess.DEVNULL
         )
