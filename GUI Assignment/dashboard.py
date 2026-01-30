@@ -8,6 +8,7 @@ import time
 import requests
 import os  # <--- Add this import
 
+
 # --- AUTO-START API SERVER (ROBUST VERSION) ---
 def start_api_server():
     """Starts the FastAPI backend in a background process."""
