@@ -1,3 +1,13 @@
+# Databases
 *.db
 *.sqlite
 Log_Analysis_Assignment/raw_logs/*.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# Archives
+*.zip

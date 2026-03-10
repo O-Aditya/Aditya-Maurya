@@ -12,6 +12,7 @@ This repository is organized by individual assignments. Each folder contains the
 | :--- | :--- | :--- |
 | [**Log_Analysis_Assignment**](./Log_Analysis_Assignment) | Analysis of system and network logs to identify patterns, security risks, and operational insights. | ✅ Completed |
 | [**GUI Assignment**](./GUI%20Assignment) | A full-stack **Cybersecurity Forensic Dashboard** built with **FastAPI** (Backend) and **Streamlit** (Frontend) for automated report generation and threat visualization. | ✅ Completed |
+| [**Report_Generation**](./Report_Generation) | **VOLDEBUG Audit Intelligence System** — A Streamlit-based security audit dashboard with fleet-wide analysis, risk scoring, compound-risk detection, and multi-format report generation (PDF, Excel, TXT). | ✅ Completed |
 
 ## 🛠️ Tech Stack
 * **Languages:** Python, Java, JavaScript
